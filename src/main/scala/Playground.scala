@@ -1,7 +1,7 @@
 import search.BinarySearch
 import sorting.BubbleSort
 
-object Main {
+object Playground {
 
   def main(args: Array[String]): Unit = {
 //    val array         = createArray(10);
