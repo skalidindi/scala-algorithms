@@ -4,6 +4,9 @@ addSbtPlugin("io.spray" % "sbt-revolver" % "0.10.0")
 // Makes our code tidy
 addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.4.3")
 
+// Ensures our code is linted
+addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.10.4")
+
 // To keep our dependencies up to date
 addSbtPlugin("net.vonbuchholtz" % "sbt-dependency-check" % "5.1.0")
 
