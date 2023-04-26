@@ -6,7 +6,7 @@ object ArrayUtil {
     val array     = new Array[Int](size)
     for (i <- 0 until size)
       array(i) = scala.util.Random.nextInt(MAX_VALUE)
-      
+
     array
   }
 }
