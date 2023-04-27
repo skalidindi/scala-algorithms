@@ -2,6 +2,9 @@ package sorting
 
 object InsertionSort {
   def sort(array: Array[Int]): Array[Int] = {
+    if (array == null)
+      throw new IllegalArgumentException("Array cannot be null")
+      
     val n = array.length
     for (i <- 1 until n) {
       var j = i - 1

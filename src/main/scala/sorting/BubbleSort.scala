@@ -3,6 +3,9 @@ package sorting
 object BubbleSort {
 
   def sort(array: Array[Int]): Array[Int] = {
+    if (array == null)
+      throw new IllegalArgumentException("Array cannot be null")
+
     val n = array.length
     if (n <= 1) return array
     for (x <- array.indices)
