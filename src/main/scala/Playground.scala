@@ -6,9 +6,12 @@ object Playground {
   def main(args: Array[String]): Unit = {
     val array         = ArrayUtil.create(10);
     val originalArray = array.clone()
-    val sortedArray   = MergeSort.sort(array)
-
-    println(originalArray.mkString(","))
-    println(sortedArray.mkString(","));
+    try {
+      val sortedArray = MergeSort.sort(null)
+      println(originalArray.mkString(","))
+      println(sortedArray.mkString(","));
+    } catch {
+      case e: Exception => println(e.getMessage)
+    }
   }
 }
