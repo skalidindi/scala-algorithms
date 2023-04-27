@@ -1,10 +1,14 @@
-import search.BinarySearch
-import sorting.BubbleSort
+import helpers.ArrayUtil
+import sorting.InsertionSort
 
 object Playground {
 
   def main(args: Array[String]): Unit = {
-    val value = BinarySearch.search(Array(5, 9, 29, 90, 66), 90)
-    println(value)
+    val array         = ArrayUtil.create(10);
+    val originalArray = array.clone()
+    val sortedArray   = InsertionSort.sort(array)
+
+    println(originalArray.mkString(","))
+    println(sortedArray.mkString(","));
   }
 }

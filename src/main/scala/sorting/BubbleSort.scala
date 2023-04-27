@@ -1,7 +1,5 @@
 package sorting
 
-import scala.util.control.Breaks._
-
 object BubbleSort {
 
   def sort(array: Array[Int]): Array[Int] = {
