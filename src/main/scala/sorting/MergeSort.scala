@@ -23,9 +23,6 @@ object MergeSort {
   }
 
   private def merge(array: Array[Int], l: Int, m: Int, r: Int): Array[Int] = {
-    val n1 = m - l + 1
-    val n2 = r - m
-
     val left  = array.slice(l, m + 1)
     val right = array.slice(m + 1, r + 1)
 
